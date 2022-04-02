@@ -21,7 +21,7 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container">
       <div class="d-flex justify-content-between mt-5">
         <h4 class="headline">Continue browsing</h4>
         <a href="#" class="text-primary"
@@ -726,6 +726,8 @@
               </div>
             </div>
           </div>
+          <div class="swiper-button-next shadow"></div>
+          <div class="swiper-button-prev shadow"></div>
         </div>
       </div>
     </div>
@@ -736,40 +738,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-      let screenSize = document.body.offsetWidth;
-      let slides;
-      if (screenSize >= 1920) {
-        slides = 8;
-      } else if (screenSize >= 1025) {
-        slides = 6;
-      } else if (screenSize >= 900) {
-        slides = 4;
-      } else if (screenSize >= 768) {
-        slides = 3;
-      } else if (screenSize >= 480) {
-        slides = 2;
-      } else {
-        slides = 1.5;
-      }
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: slides,
-        spaceBetween: 30,
-        loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-      var swiper2 = new Swiper(".mySwiper2", {
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        loop: true,
-      });
-    </script>
+    <script src="./js/swiper.js"></script>
   </body>
 </html>

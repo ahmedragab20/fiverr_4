@@ -189,4 +189,21 @@ a:hover {
 .bg_main_color_text {
   color: #194275;
 }
+
+.mySwiper .swiper-button-next,
+.mySwiper .swiper-button-prev {
+  background: #fff;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.mySwiper .swiper-button-next {
+  -webkit-transform: scale(0.8) translateX(15px);
+          transform: scale(0.8) translateX(15px);
+}
+
+.mySwiper .swiper-button-prev {
+  -webkit-transform: scale(0.8) translateX(-15px);
+          transform: scale(0.8) translateX(-15px);
+}
 /*# sourceMappingURL=main.css.map */
