@@ -15,11 +15,16 @@ if (screenSize >= 1920) {
 }
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: slides,
+  slidesPerGroup: slides,
   spaceBetween: 30,
   loop: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+  },
+  navigation: {
+    nextEl: ".next",
+    prevEl: ".prev",
   },
 });
 var swiper2 = new Swiper(".mySwiper2", {

@@ -1,6 +1,8 @@
 .card_container {
   border: 0.1em solid #eee;
   overflow: hidden;
+  box-shadow: 0px 5px 9px rgba(153, 153, 153, 0.334);
+  cursor: grab;
   .mySwiper2 {
     &:hover {
       .swiper-button-next,
